@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #121212;
+  font-family: sans-serif;
+}
+
+li {
+  background-color: pink;
+  position: relative;
+}
+li > a {
+  background-color: #EB5757;
+  line-height: 48px;
+  width: 48px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+li p {
+  float: left;
+  line-height: 48px;
+}
+li .participantInfo {
+  z-index: 5;
+  padding: 0 20px;
+  overflow: hidden;
+  position: relative;
+  background-color: gold;
+  transition: 0.3s;
+}
+li .participantInfo a {
+  width: 85px;
+  background-color: #F4F6FF;
+  display: block;
+  float: right;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 10px;
+  line-height: 10px;
+  padding: 4px 0;
+  margin-top: 10px;
+}/*# sourceMappingURL=style.css.map */
