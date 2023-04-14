@@ -3,17 +3,61 @@
   padding: 0;
 }
 
+body {
+  font-family: sans-serif;
+}
+
 a {
   text-decoration: none;
   color: #121212;
   font-family: sans-serif;
 }
 
-li {
-  background-color: pink;
+h1 {
+  color: #282C32;
+  padding: 48px 24px 24px;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  line-height: 24px;
+  font-size: 24px;
+  top: 0;
+  z-index: 7;
+}
+
+p {
+  color: #282C32;
+  padding: 0px 24px 24px;
+  font-size: 12px;
+}
+
+.topParagraph {
+  margin-top: 120px;
+}
+
+.smallParagraph {
+  font-size: 10px;
+  line-height: 14px;
+  padding-bottom: 4px;
+}
+
+.linkParagraph {
+  background-color: #F4F6FF;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 21px 12px;
+  margin: 0 24px 24px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+ul {
+  background-color: #F4F6FF;
+}
+ul li {
   position: relative;
 }
-li > a {
+ul li > a {
   background-color: #EB5757;
   line-height: 48px;
   width: 48px;
@@ -21,19 +65,20 @@ li > a {
   right: 0;
   top: 0;
 }
-li p {
+ul li p {
   float: left;
   line-height: 48px;
+  padding: 0;
 }
-li .participantInfo {
+ul li .participantInfo {
   z-index: 5;
-  padding: 0 20px;
+  padding: 0 24px;
   overflow: hidden;
   position: relative;
-  background-color: gold;
+  background-color: white;
   transition: 0.3s;
 }
-li .participantInfo a {
+ul li .participantInfo a {
   width: 85px;
   background-color: #F4F6FF;
   display: block;
@@ -44,4 +89,15 @@ li .participantInfo a {
   line-height: 10px;
   padding: 4px 0;
   margin-top: 10px;
+}
+
+.bottomBtn {
+  font-size: 14px;
+  text-align: center;
+  margin: 24px;
+  background-color: #F4F6FF;
+  display: block;
+  border-radius: 32px;
+  line-height: 16px;
+  padding: 16px;
 }/*# sourceMappingURL=style.css.map */

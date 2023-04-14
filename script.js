@@ -50,7 +50,7 @@ function touchEnd(participantInfo) {
         setTimeout(() => {
             participantInfo.style.transition = "0.3s"
             participantInfo.style.transform = "translateX(-" + 0 + "px)"
-        }, 2000)
+        }, 1000)
     } else {
         participantInfo.style.transition = "0.3s"
         participantInfo.style.transform = "translateX(-" + 0 + "px)"
