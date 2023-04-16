@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "SF UI Display";
+  src: url("sf-ui-display-light-58646b33e0551.otf");
+}
 h1 {
   padding-top: 48px;
 }
@@ -8,6 +12,7 @@ h1 {
 
 body {
   background-image: url("feeCreation.png");
+  font-family: "SF UI Display", sans-serif;
 }
 
 label {
