@@ -55,7 +55,7 @@ form > input {
   padding: 24px;
   font-size: 0;
 }
-.formFooter input {
+.formFooter > input, .formFooter .addingCheckbox {
   height: 24px;
   width: 24px;
   border-radius: 4px;
@@ -69,7 +69,7 @@ form > input {
   display: inline-block;
   vertical-align: top;
 }
-.formFooter input:checked {
+.formFooter > input:checked, .formFooter .addingCheckbox:checked {
   -moz-appearance: auto;
        appearance: auto;
   -webkit-appearance: auto;
@@ -97,4 +97,12 @@ form > input {
   border: none;
   font-family: "SF UI Display", sans-serif;
   color: #fff;
+}
+
+.smallParagraph {
+  font-size: 10px;
+  line-height: 14px;
+  padding-bottom: 4px;
+  padding-top: 8px;
+  margin-bottom: 0;
 }/*# sourceMappingURL=registration.css.map */
