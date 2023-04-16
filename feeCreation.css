@@ -6,6 +6,10 @@ h1 {
   vertical-align: middle !important;
 }
 
+body {
+  background-image: url("feeCreation.png");
+}
+
 label {
   font-size: 14px !important;
   vertical-align: middle !important;
