@@ -3,6 +3,9 @@
     padding: 0
 body
     font-family: sans-serif
+    background-image: url("Gradient.png")
+    background-size: cover
+    background-attachment: fixed
 a
     text-decoration: none
     color: #121212
@@ -17,11 +20,18 @@ h1
     font-size: 24px
     top: 0
     z-index: 7
+.participantSection
+    background-color: #fff
+    padding-bottom: 24px
+.participantSection:last-of-type
+    padding-top: 24px
+    margin-bottom: 97px
 p
     color: #282C32
     padding: 0px 24px 24px
     font-size: 12px
-.topParagraph
+    background-color: #fff
+.participantSection:first-of-type .topParagraph
     margin-top: 120px
 .smallParagraph
     font-size: 10px
@@ -32,25 +42,30 @@ p
     font-size: 12px
     line-height: 14px
     padding: 21px 12px
-    margin: 0 24px 24px
+    margin: 0 24px
     text-align: center
     border-radius: 8px
+
 ul
-    background-color: #F4F6FF
     li
-        // background-color: pink
         position: relative
+        margin-bottom: 1px
+        &:first-child
+            margin-top: 1px
         >a
             background-color: #EB5757
             line-height: 48px
             width: 48px
+            height: 48px
             position: absolute
             right: 0
             top: 0
+            background-image: url("delete.svg")
+            background-repeat: no-repeat
+            background-position: center
         p
             float: left
             line-height: 48px
-            // background-color: red
             padding: 0
 
         .participantInfo
@@ -71,12 +86,19 @@ ul
                 line-height: 10px
                 padding: 4px 0
                 margin-top: 10px
-.bottomBtn
-    font-size: 14px
-    text-align: center
-    margin: 24px
-    background-color: #F4F6FF
-    display: block
-    border-radius: 32px
-    line-height: 16px
-    padding: 16px
+footer
+    background-color: #fff
+    padding: 24px
+    position: fixed
+    width: 100%
+    bottom: 0
+    z-index: 10
+    box-sizing: border-box
+    .bottomBtn
+        font-size: 14px
+        text-align: center
+        background-color: #F4F6FF
+        display: block
+        border-radius: 32px
+        line-height: 16px
+        padding: 16px
