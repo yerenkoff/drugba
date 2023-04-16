@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="registration.css">
+    <link rel="stylesheet" href="companyRegistration2.css">
+    <style>
+        .formFooter button{
+            display: inline-block;
+        }
+        .closeBtn{
+            width: 80px !important;
+            margin-right: 8px;
+            background: #ffffff00 !important;
+            color: #788bf0 !important;
+        }
+        .saveBtn{
+            width: calc(100% - 88px) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Редактирование <br> анкеты</h1>
+    <form action="">
+        <input type="text" placeholder="Редактирование анкеты *" class="required" required>
+        <input type="text" placeholder="Дата рождения *" class="required" required>
+        <input type="text" placeholder="Часовой пояс *" required>
+        <input type="text" placeholder="Должность">
+        <input type="text" placeholder="Компания *">
+        <div class="formFooter">
+            <input type="checkbox" name="check" id="" required>
+            <label for="">Я согласен на обработку моих персональных данных в соответствии с Политикой и Пользовательским соглашением</label>
+            <button class="closeBtn">Закрыть</button>
+            <button class="saveBtn">Сохранить</button>
+        </div>
+    </form>
+</body>
+
+</html>
