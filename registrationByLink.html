@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,32 @@
     <title>Document</title>
     <link rel="stylesheet" href="registration.css">
 </head>
+
 <body>
     <img src="pic.svg" alt="">
     <h1>Регистрация</h1>
     <p>Пожалуйста, заполните анкету. Так я буду знать, кого и когда поздравлять</p>
-    <form action="">
+    <form action="" name="registrationByLinkForm">
         <input type="text" placeholder="Имя и фамилия" class="required" required>
-        <input type="text" placeholder="Дата рождения" class="required" required>
-        <input type="text" placeholder="Часовой пояс" class="required" required>
+        <div class="dateInput">
+            <input id="dateInput" type="date" onchange="this.nextElementSibling.innerHTML = !this.value ? 'Дата рождения' : this.value.split('-')[2]+'.'+this.value.split('-')[1]+'.'+this.value.split('-')[0]" id="birthday" name="birthday" required>
+            <label for="birthday">Дата рождения</label>
+        </div>
+        <input type="text" id="timeZoneInput" placeholder="Часовой пояс" class="required" required>
         <input type="text" placeholder="Должность">
         <input type="text" placeholder="Компания" class="required" required>
         <div class="formFooter">
             <input type="checkbox" name="check" id="" required>
-            <label for="">Я согласен на обработку моих персональных данных в соответствии с Политикой и Пользовательским соглашением</label>
+            <label for="">Я согласен на обработку моих персональных данных в соответствии с Политикой и Пользовательским
+                соглашением</label>
             <button>Сохранить</button>
         </div>
     </form>
+    <script>
+        document.getElementById("dateInput").style.transform = "scaleX("+ (document.getElementById("dateInput").nextElementSibling.offsetWidth) +")"
+        
+        document.getElementById("timeZoneInput").value = "Часовой пояс: " + Intl.DateTimeFormat().resolvedOptions().timeZone
+    </script>
 </body>
+
 </html>
