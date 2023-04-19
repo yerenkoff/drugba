@@ -41,8 +41,6 @@ label {
   width: calc(100% - 48px);
   margin-right: 8px;
   vertical-align: middle;
-  text-decoration: underline;
-  text-decoration-color: #282C32;
 }
 .presents .present input:focus {
   border: 1px solid #282C32;

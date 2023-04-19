@@ -67,7 +67,7 @@ form > input {
   cursor: pointer;
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
 }
 .formFooter > input:checked, .formFooter .addingCheckbox:checked {
   -moz-appearance: auto;
@@ -76,7 +76,7 @@ form > input {
 }
 .formFooter label {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   width: calc(100% - 24px);
   font-size: 10px;
   padding-left: 16px;

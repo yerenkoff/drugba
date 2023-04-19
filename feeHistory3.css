@@ -52,13 +52,17 @@ h1 {
 }
 .companyInfo > a .buttonInfo {
   float: left;
+  font-size: 0;
+  line-height: 22px;
 }
 .companyInfo > a .buttonInfo img {
   vertical-align: middle;
+  margin-right: 4px;
 }
 .companyInfo > a .buttonInfo p {
   display: inline-block;
   vertical-align: middle;
+  font-size: 10px;
 }
 .companyInfo > a > p {
   float: right;
