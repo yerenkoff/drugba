@@ -17,7 +17,10 @@
     <form action="" name="feeCreationForm">
         <input type="text" placeholder="Тип события" required>
         <input type="text" placeholder="Кому собираем" required>
-        <input type="text" placeholder="Дата события" required>
+        <div class="dateInput">
+            <input id="dateInput" type="date" onchange="this.nextElementSibling.innerHTML = !this.value ? 'Дата события' : this.value.split('-')[2]+'.'+this.value.split('-')[1]+'.'+this.value.split('-')[0]" id="birthday" name="birthday" required>
+            <label for="birthday">Дата рождения</label>
+        </div>
         <input type="text" placeholder="Ссылка на внешнюю копилку/карту" required>
         <p class="smallParagraph">Ссылки на желаемый подарок
             *</p>
@@ -47,6 +50,7 @@
         </div>
     </form>
     <script>
+        document.getElementById("dateInput").style.transform = "scaleX(" + (document.getElementById("dateInput").nextElementSibling.offsetWidth) + ")"
         let presents = document.getElementsByClassName("presents")[0]
         let presentId = 1
         function addPresent(e) {

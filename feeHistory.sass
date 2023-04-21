@@ -37,6 +37,20 @@ h1
         text-align: center
     .active
         border: 1px solid #788BF0
+    .calendar
+        display: inline-block
+        width: 24px
+        position: relative
+        overflow: hidden
+        vertical-align: middle
+    input
+        top: 0
+        left: 50%
+        width: 10px
+        height: 24px
+        position: absolute
+        transform: scaleX(3)
+        opacity: 0
     .calendarButton
         width: 24px
         background-image: url("calendar.svg")
@@ -45,7 +59,7 @@ h1
         background-position: center
 table
     border-spacing: 0
-    border-collapse:separate
+    border-collapse: separate
     border-spacing: 0 5px
     margin-top: 24px
     tr

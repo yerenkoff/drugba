@@ -96,6 +96,22 @@ header {
 .companyInfo .active {
   border: 1px solid #788BF0;
 }
+.companyInfo .calendar {
+  display: inline-block;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.companyInfo .calendar input {
+  top: 0;
+  left: 50%;
+  width: 10px;
+  height: 24px;
+  position: absolute;
+  transform: scaleX(3);
+  opacity: 0;
+}
 .companyInfo .calendarButton {
   width: 24px;
   background-image: url("calendar.svg");
