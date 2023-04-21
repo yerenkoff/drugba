@@ -67,9 +67,11 @@ ul
             background-repeat: no-repeat
             background-position: center
         p
-            float: left
-            line-height: 48px
+            // float: left
+            line-height: 20px
             padding: 0
+            // background-color: pink
+            // justify-content: center
 
         .participantInfo
             z-index: 5
@@ -80,6 +82,21 @@ ul
             transition: 0.3s
             display: flex
             justify-content: space-between
+            align-items: center
+            section
+                // background-color: pink
+                flex-direction: column
+                display: flex
+                height: 48px
+                justify-content: center
+                &:last-child
+                    flex-direction: row
+                    align-items: center
+                span
+                    line-height: 14px
+                    font-size: 10px
+                p
+                    padding-right: 10px
             a
                 width: 85px
                 background-color: #F4F6FF
@@ -90,7 +107,7 @@ ul
                 font-size: 10px
                 line-height: 10px
                 padding: 4px 0
-                margin-top: 10px
+                // margin-top: 10px
                 height: 20px
 footer
     background-color: #fff
