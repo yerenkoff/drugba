@@ -29,6 +29,7 @@ body {
 form > input {
   margin-bottom: 16px;
   margin-top: 0;
+  font-size: 14px;
 }
 
 footer {
