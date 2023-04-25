@@ -53,8 +53,10 @@
                 this.previousElementSibling.style.fontSize = "10px"
             }
             i.onblur = function() {
-                this.previousElementSibling.style.transform = 'translate(13px, 31px)'
-                this.previousElementSibling.style.fontSize = "14px"
+                if (this.value == "") {
+                    this.previousElementSibling.style.transform = 'translate(13px, 31px)'
+                    this.previousElementSibling.style.fontSize = "14px"
+                }
             }
         }
     </script>
