@@ -26,6 +26,10 @@ body {
   background-repeat: no-repeat;
 }
 
+form {
+  overflow: hidden;
+  margin-bottom: 100px;
+}
 form > input {
   margin-bottom: 16px;
   margin-top: 0;
