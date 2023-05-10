@@ -52,25 +52,29 @@ h1 {
 .companyInfo .calendar {
   display: inline-block;
   width: 24px;
+  height: 24px;
   position: relative;
   overflow: hidden;
   vertical-align: middle;
 }
 .companyInfo input {
-  top: 0;
-  left: 50%;
-  width: 10px;
-  height: 24px;
-  position: absolute;
-  transform: scaleX(3);
-  opacity: 0;
-}
-.companyInfo .calendarButton {
   width: 24px;
+  height: 24px;
   background-image: url("calendar.svg");
   background-repeat: no-repeat;
   background-size: 60%;
+  border: none;
+  outline: none;
+  color: rgba(0, 0, 0, 0);
   background-position: center;
+}
+.companyInfo .calendarButton {
+  width: 24px;
+  display: block;
+  height: 24px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 table {

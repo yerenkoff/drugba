@@ -7,6 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="feeHistory.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <style>
+        .daterangepicker.opensright:before, .daterangepicker.opensright:after{
+            opacity: 0;
+        }
+        .daterangepicker{
+            /* width: 90%; */
+            width: auto;
+            max-width: 90%;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,8 +31,9 @@
         <a href="">30 дней</a>
         <a href="">Год</a>
         <div class="calendar">
-            <a href="" class="calendarButton"></a>
-            <input type="date" name="" id="">
+            <!-- <a href="" class="calendarButton"></a> -->
+            <label for="dates" class="calendarButton"></label>
+            <input type="text" id="dates" name="dates" id="">
         </div>
         <table>
             <tr>
@@ -127,6 +142,9 @@
     <footer>
         <a href="" class="bottomBtn">Назад</a>
     </footer>
+    <script>
+        $('input[name="dates"]').daterangepicker();
+    </script>
 </body>
 
 </html>
